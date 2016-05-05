@@ -1,0 +1,27 @@
+{
+  "name": "formula.ts",
+  "version": "0.0.1",
+  "description": "TypeScript implementation of most Microsoft Excel formula functions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zp-j/formula.ts.git"
+  },
+  "keywords": [
+    "formula.ts",
+    "Microsoft",
+    "Excel",
+    "functions",
+    "statistics",
+    "TypeScript"
+  ],
+  "author": "Zhipeng Jiang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zp-j/formula.ts/issues"
+  },
+  "homepage": "https://github.com/zp-j/formula.ts#readme"
+}
