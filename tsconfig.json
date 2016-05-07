@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "removeComments": false,
+        "preserveConstEnums": true,
+        "outFile": "built/formula.js",
+        "sourceMap": true
+    },
+    "exclude": [
+        "node_modules"    ]
+}

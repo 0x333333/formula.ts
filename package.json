@@ -2,9 +2,9 @@
   "name": "formula.ts",
   "version": "0.0.1",
   "description": "TypeScript implementation of most Microsoft Excel formula functions.",
-  "main": "index.js",
+  "main": "build/formula.js",
   "scripts": {
-    "test": "npm test"
+    "test": "./node_modules/.bin/gulp test"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,25 @@
   "bugs": {
     "url": "https://github.com/zp-j/formula.ts/issues"
   },
-  "homepage": "https://github.com/zp-j/formula.ts#readme"
+  "homepage": "https://github.com/zp-j/formula.ts#readme",
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "config": "^1.20.1",
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-mocha": "^2.2.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-tslint": "^5.0.0",
+    "gulp-typedoc": "^1.2.1",
+    "gulp-typescript": "^2.13.3",
+    "merge2": "^0.3.6",
+    "mocha": "^2.2.5",
+    "require-dir": "^0.3.0",
+    "tslint": "^3.9.0",
+    "typescript": "latest"
+  },
+  "dependencies": {
+    "log4js": "^0.6.36"
+  }
 }
