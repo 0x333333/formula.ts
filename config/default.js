@@ -14,7 +14,7 @@ var cfg = {
 };
 
 cfg.fileset.ts = path.join(cfg.dir.src, '**', '*.ts');
-cfg.fileset.tsTest = path.join(cfg.dir.test, '**', '*.spec.ts');
+cfg.fileset.tsTest = path.join(cfg.dir.test, '**', '*.ts');
 
 // files watched during the build
 cfg.fileset.watch = [
@@ -23,7 +23,7 @@ cfg.fileset.watch = [
 
 // The test specs; override this locally to run a single test suite
 cfg.fileset.test = [
-	path.join(cfg.dir.test, '**', '*.spec.js')
+	path.join(cfg.dir.test, '**', '*.js')
 ];
 
 cfg.jshint = {

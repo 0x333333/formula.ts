@@ -24,13 +24,13 @@ module.exports = function (gulp) {
             .pipe(ts(cfg.tsConfig))
             .pipe(sourcemaps.write())
             .pipe(gulp.dest(path.join(cfg.dir.dist)))
-        //.pipe(gulp.dest(function(file) {
-        //   return file.base;
-        //}));
+            .pipe(gulp.dest(function(file) {
+                return file.base;
+            }));
     });
 
     gulp.task('run-tests', ['ts-plus-test'], function () {
-        return gulp.src(gulp.cfg.dir.test + '/*.spec.js', { read: false })
+        return gulp.src(gulp.cfg.dir.test + '/*.js', { read: true })
             .pipe(mocha({ reporter: 'nyan' }));
     });
 };
